@@ -9,6 +9,8 @@ Last updated: November 3, 2026
 
 Trophe is operated by Nicolo Luca Bernardini, Via Sant'Antonio 3, Locarno, Switzerland, who is responsible for your data (the "controller"). Contact: olocin27@gmail.com.
 
+Trophe has no establishment and no representative in the European Union or the United Kingdom. Wherever you live, you can write directly to the controller at the postal or email address above, in English or Italian.
+
 ## Data stored on your device
 
 Trophe stores the following on your iPhone: your name, goal, diet, allergies, personal details (such as age, sex, height and weight), your answers to the starting check (such as supplements, periods and tiredness), the supplements you take and tick off, meals, water, activity, and reminders. The starting check answers and your supplements never leave your device. This data stays on your device unless a section below says otherwise. You can remove it with Settings > Start over, or by deleting the app.
