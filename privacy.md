@@ -5,7 +5,7 @@ permalink: /privacy/
 
 # Trophe Privacy Policy
 
-Last updated: November 3, 2026
+Last updated: November 6, 2026
 
 Trophe is operated by Nicolo Luca Bernardini, Via Sant'Antonio 3, Locarno, Switzerland, who is responsible for your data (the "controller"). Contact: olocin27@gmail.com.
 
@@ -17,13 +17,17 @@ Trophe stores the following on your iPhone: your name, goal, diet, allergies, pe
 
 ## Meal photos and voice input
 
-If you agree in the app, each meal photo you take or choose, and the text of a meal you dictate, passes through our server, hosted by Supabase, Inc., and is sent to Anthropic, PBC, an AI company, to recognize the food. The list of foods in the app goes with it, including the names of products you scanned. Nothing is sent without your agreement, and you can withdraw it at any time in Settings > Send meals to AI.
+If you agree in the app, each meal photo you take or choose, the text of a meal you dictate, and the ingredient list of a recipe you import, passes through our server, hosted by Supabase, Inc., and is sent to Anthropic, PBC, an AI company, to recognize the food. The list of foods in the app goes with it, including the names of products you scanned. Nothing is sent without your agreement, which the app asks for the first time you use a photo, voice or recipe import. To withdraw it, write to the contact address above.
 
 Anthropic processes this data on our behalf. It does not use it to train its models and deletes it within 30 days, except content flagged for a breach of its usage policy, which it can keep for up to 2 years (https://privacy.claude.com/en/articles/7996866-how-long-do-you-store-my-organization-s-data). Trophe does not save your photos or dictated text on its server.
 
 Voice input uses Apple's speech recognition: your audio is processed by Apple under Apple's privacy policy, and on your device only if Apple's service is not reachable.
 
-To limit how many photos and dictated meals can be analyzed, the app creates an anonymous account with Supabase, without your email or name. It is separate from the optional account below. The server stores scrambled (hashed) versions of this anonymous account's ID and of your IP address, with a daily count, and deletes them after about a week. To apply the limits of your plan, the app also sends the anonymous app user ID from RevenueCat, which the server uses only to check whether you have Trophe Pro.
+To limit how many photos and dictated meals can be analyzed, the app creates an anonymous account with Supabase, without your email or name. It is separate from the optional account below. The app also uses Apple's App Attest, which lets the server check that requests come from the real Trophe app on a real iPhone: it creates a key on your iPhone, and the server keeps that key's public part. The server stores scrambled (hashed) versions of this key's ID and of your IP address, with a daily count, and deletes them after about a week. The anonymous account ID is also your app user ID with RevenueCat, which the server uses only to check whether you have Trophe Pro. The anonymous account is deleted after 30 days without use, or when you delete your account.
+
+## Recipe links
+
+When you import a recipe from a link, the app opens that page directly from your device to read the recipe, as a browser would: the website receives your device's IP address. No personal details are sent with the request.
 
 ## Barcodes
 
@@ -47,7 +51,7 @@ Accounts are optional. Before you create one, the app asks for your consent. Wit
 
 You can sign in with email, with Apple or with Google. Apple or Google then shares your email address with us, and your name if you allow it. Apple can hide your real email address. If you sign in with Apple, the server keeps a token from Apple, used only to revoke Trophe's access to your Apple ID when you delete the account.
 
-You can delete your account at any time in Profile > Account and sync > Delete account. This deletes your synced data, your feedback messages sent while signed in, and the Apple token, and revokes the Apple sign-in. Deleting your account does not cancel a subscription, which you manage in your Apple settings.
+You can delete your account at any time in Profile > Account and sync > Delete account. This deletes your synced data, your feedback messages sent while signed in, the Apple token and the anonymous account used for food recognition, and revokes the Apple sign-in. Deleting your account does not cancel a subscription, which you manage in your Apple settings.
 
 ## Feedback
 
@@ -71,11 +75,11 @@ For users in the European Economic Area, the United Kingdom and Switzerland:
 
 - meal photos and dictated meals sent for recognition: your consent;
 - account and sync: to provide the account you asked for, and your explicit consent for health data such as weight, workouts and diet;
-- usage data: your consent;
 - subscriptions: to provide the subscription you bought;
+- usage data: your consent;
 - photo and dictation limits, and feedback: our legitimate interest in keeping the service working and affordable, and in improving it.
 
-You can withdraw a consent at any time in Settings. Withdrawing does not affect what was processed before.
+You can withdraw a consent at any time by writing to the contact address above, for usage data in Settings > Usage data, or for the account by deleting it. Withdrawing does not affect what was processed before.
 
 ## Where your data goes
 
@@ -86,6 +90,9 @@ Anthropic, RevenueCat and PostHog are based in the United States, and PostHog st
 - Data on your device: until you use Start over or delete the app.
 - Account data and the Apple token: until you delete your account.
 - Photo and dictation counts: about a week.
+- Anonymous account for food recognition: 30 days after its last use, or until you delete your account.
+- App Attest public key: 90 days after its last use.
+- Feedback send counts (scrambled account ID and IP address), used to stop spam: one day.
 - Usage data: one year.
 - Meal photos and dictated text at Anthropic: up to 30 days, as described above.
 
